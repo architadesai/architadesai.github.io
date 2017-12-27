@@ -1,0 +1,20 @@
+.profile{
+	margin: 100px;
+}
+
+
+#profile-picture img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+#projects a img{
+	width: 300;
+	height: 300px;
+}
+
+#project1{
+	float: left;
+	margin-right: 20px;
+}
