@@ -4,50 +4,141 @@
 	<meta charset="UTF-8">
 	<title>ARCHITA DESAI</title>
 	<link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="assets/css/lib/font-awesome.min.css"> -->
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<script src="assets/js/lib/jquery-3.2.1.min.js"></script>
 	<script src="assets/js/lib/bootstrap.min.js"></script>
 </head>
 <body>
 	
-	<div class="profile">
-		<div id="intro">
-			<h1>Archita Desai Resume</h1>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-site" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Archita Desai</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-site">
+				<ul class="nav navbar-nav">
+					<li><a href="#about-me">About Me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
 		</div>
+	</nav>
+
+	<div id="landing-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Archita Desai</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	
+	<div class="profile">
 		<div id="about-me">
-			<div id="profile-picture"><img src="assets/images/archita-new.jpg" alt="Profile picture"></div>
-			<h2>About Me</h2>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deserunt cum hic voluptates suscipit libero ut, beatae quisquam culpa enim reiciendis, neque molestias nam maiores facere mollitia architecto autem dolorum.
+			<div class="container">	
+				<div class="col-lg-12">
+					<div id="profile-picture"><img src="assets/images/archita-new.jpg" alt="Profile picture"></div>
+				</div>
+				<div class="col-lg-12">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deserunt cum hic voluptates suscipit libero ut, beatae quisquam culpa enim reiciendis, neque molestias nam maiores facere mollitia architecto autem dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eligendi similique recusandae iste, ipsum facere, non delectus rem. Eaque at perferendis enim dicta velit libero, sapiente vel ab atque eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa minima voluptatem aliquam iusto nobis cumque dolor harum commodi impedit. Alias harum provident voluptatum consequuntur. Nesciunt doloremque placeat necessitatibus rem.</p>
+				</div>
+			</div>
 		</div>
 		<div id="skills">
-			<h2>Development Skills</h2>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Bootstrap</li>
-				<li>JavaScript</li>
-				<li>jQuery</li>
-				<li>C++</li>
-				<li>Python</li>
-				<li>C</li>
-			</ul>
-		</div>
-		<div id="projects">
-			<h2>Projects</h2>
-			<a href="https://architadesai.github.io/rgbGame" id="project1"><img src="assets/images/rgbGame.jpg" alt="RGB color guessing game image"></a>
-			<a href="https://architadesai.github.io/patatap-clone" id="project2"><img src="assets/images/archita.jpg" alt="patatap clone image"></a>
-		</div>
-		<div id="resume">
-			<button>Huge download button with written 'click here to download my resume' in PDF format with effects</button>
-		</div>
-		<div id="contact">
-			<i>GitHub</i>
-			<i>LinkedIn</i>
-			<i>Twitter</i>
-			<i>Quora</i>
-			<i>Email</i>
+			<div class="container">	
+				<h2>Development Skills</h2>
+
+				<h3>Web</h3>
+				<div class="row">
+					<div class="dev-html col-md-4 col-xs-4">
+						<p>HTML5</p>
+					</div>
+					<div class="dev-html col-md-4 col-xs-4">
+						<p>CSS3</p>
+					</div>
+					<div class="dev-html col-md-6 col-xs-4">
+						<p>JavaScript</p>
+					</div>
+					<div class="dev-html col-md-6 col-xs-4">
+						<p>jQuery</p>
+					</div>
+					<div class="dev-html col-md-6 col-xs-4">
+						<p>Bootstrap</p>
+					</div>
+				</div>	
+		
+				<h3>Programming Languages</h3>
+				<div class="row">	
+					<div class="dev-html col-md-4 col-xs-6">
+						<p>C++</p>
+					</div>
+					<div class="dev-html col-md-4 col-xs-6">
+						<p>Python</p>
+					</div>
+					<div class="dev-html col-md-4 col-xs-6">
+						<p>C</p>
+					</div>
+				</div>
+
+			<h3>Tools & Platform</h3>
+				<div class="row">
+					<div class="dev-html col-md-4 col-xs-6">
+						<p>Git</p>
+					</div>
+					<div class="dev-html col-md-4 col-xs-6">
+						<p>GitHub</p>
+					</div>
+					<div class="dev-html col-md-4 col-xs-6">
+						<p>Sublime</p>
+					</div>
+					<div class="dev-html col-md-4 col-xs-6">
+						<p>Vim</p>
+					</div>
+					<div class="dev-html col-md-4 col-xs-6">
+						<p>Linux</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
+		<div id="projects">
+			<div class="container">	
+				<h2>Projects</h2>
+				<a href="https://architadesai.github.io/rgbGame" id="project1"><img src="assets/images/rgbGame.jpg" alt="RGB color guessing game image" class="img-rounded"></a>
+				<a href="https://architadesai.github.io/patatap-clone" id="project2"><img src="assets/images/archita.jpg" alt="patatap clone image"></a>
+			</div>
+		</div>
+		<div id="resume">
+			<div class="container">	
+				<button>Huge download button with written 'click here to download my resume' in PDF format with effects</button>
+			</div>
+		</div>
 	</div>
+	
+	<div class="footer">
+		<div class="container">
+			<div id="contact">
+				<a href="https://www.github.com/architadesai"><i class="fa fa-github fa-2x social" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/architadesai"><i class="fa fa-linkedin fa-2x social" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/architad8"><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
+				<a href="https://www.quora.com/profile/Archita-Desai-1"><i class="fa fa-quora fa-2x social" aria-hidden="true"></i></a>
+			</div>
+			<p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017, Archita Desai. All rights reserved.</p>
+		</div>
+	</div>	
 </body>
 </html>
