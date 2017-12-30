@@ -105,6 +105,22 @@ body{
 	margin-bottom: 30px;
 }
 
+.img-responsive{
+	height: 400px;
+}
+
+/* #projects a img{
+	max-width: 100% !important;
+	max-height: 450px;
+height: auto;
+width: auto;
+} */
+
+/* #projects{
+	float: left;
+	width: 100%;
+}
+
 #projects a img{
 	width: 370px;
 	height: 450px;
@@ -113,4 +129,4 @@ body{
 #project1{
 	float: left;
 	margin-right: 20px;
-}
+} */
