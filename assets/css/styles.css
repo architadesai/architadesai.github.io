@@ -5,6 +5,36 @@ body{
 	background: linear-gradient(to right, rgb(240,240,240), white 50%, white 70%, rgb(220,220,220));
 }
 
+h1{
+	font-weight: 700;
+	letter-spacing: 2.7px;
+	color: #556588;
+	font-size: 45px;
+}
+
+h3{
+	text-decoration: underline;
+}
+
+h3:nth-of-type(1){
+	text-align: left;
+}
+
+h3:nth-of-type(2){
+	text-align: center;
+}
+
+h3:nth-of-type(3){
+	text-align: right;
+}
+
+hr{ 
+	border : 0;
+	height: 1px;
+	max-width: 430px; 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+
 
 .navbar{
 	margin-bottom: 0px;
@@ -21,18 +51,15 @@ body{
 .navbar-default .navbar-brand{
 	color: #757585;
 	margin: 5px 10px;
-	font-weight: 700;
+	font-weight: 800;
+	font-size: 25px;
 }
 
 .nav.navbar-nav li a{
 	color: #555555;
 	font-weight: 600;
 	margin: 5px 10px;
-}
-
-#about-me{
-	text-align: center;
-	padding: 40px 0; 
+	font-size: 17px;
 }
 
 .container{
@@ -47,19 +74,6 @@ body{
 	font-weight: 700;
 }
 
-hr{ 
-	border : 0;
-	height: 1px;
-	max-width: 430px; 
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
-}
-
-/* hr{
-	width: 50%;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-}
- */
 .dev-html{
 	width: 120px;
 	height: 120px;
@@ -70,13 +84,23 @@ hr{
 	line-height: 120px;
 	font-size: 18px;
 	font-weight: 600;
-	/* For Multiple borders around circle, use below code.
+	/* For cool borders around circle:
 	But my head started feeling,
-	 dizzy just by looking*/
+	 dizzy just by looking at it*/
 	 /*box-shadow:
 	    0 0 0 10px rgb(204,204,204),
 	    0 0 0 15px rgb(230,230,230); 
     margin: 30px;*/
+}
+
+.img-responsive{
+	height: 325px;
+}
+
+
+#about-me{
+	text-align: center;
+	padding: 40px 0; 
 }
 
 .footer{
@@ -111,11 +135,6 @@ hr{
 	color: #a62100;
 }
 
-#contact{
-	padding-bottom: 2%;
-}
-
-
 
 #landing-page{
 	padding: 24% 0;
@@ -137,28 +156,6 @@ hr{
 	margin-bottom: 30px;
 }
 
-.img-responsive{
-	height: 325px;
+#contact{
+	padding-bottom: 2%;
 }
-
-/* #projects a img{
-	max-width: 100% !important;
-	max-height: 450px;
-height: auto;
-width: auto;
-} */
-
-/* #projects{
-	float: left;
-	width: 100%;
-}
-
-#projects a img{
-	width: 370px;
-	height: 450px;
-}
-
-#project1{
-	float: left;
-	margin-right: 20px;
-} */
