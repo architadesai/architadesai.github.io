@@ -170,7 +170,8 @@ h4{
 	margin-bottom: 30px;
 }
 
-#skills{
+#skills, #projects{
+	margin-top: 15px;
 	padding: 40px 0;
 }
 
