@@ -37,6 +37,13 @@ hr{
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
 }
 
+h4{
+	font-size: 22px;
+	font-weight: 500;
+	color: #444444;
+}
+
+
 
 .navbar{
 	margin-bottom: 0px;
@@ -97,7 +104,12 @@ hr{
 }
 
 .img-responsive{
-	height: 325px;
+	height: 320px;
+}
+
+.col-centered{
+	float: none;
+	margin: 30px auto;
 }
 
 .footer{
@@ -150,6 +162,7 @@ hr{
 	font-size: 17px;
 }
 
+
 #profile-picture img{
 	width: 200px;
 	height: 200px;
@@ -160,11 +173,6 @@ hr{
 #skills{
 	padding: 40px 0;
 }
-
-#projects img{
-	float: left;
-}
-
 
 #contact{
 	padding-bottom: 2%;
