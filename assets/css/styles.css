@@ -3,6 +3,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	color: #232323;
 	background: linear-gradient(to right, rgb(240,240,240), white 50%, white 70%, rgb(220,220,220));
+	position: relative;
 }
 
 h1{
@@ -18,7 +19,7 @@ h3{
 	font-weight: 300;
 }
 
-h3:nth-of-type(1){
+/* h3:nth-of-type(1){
 	text-align: left;
 }
 
@@ -28,7 +29,7 @@ h3:nth-of-type(2){
 
 h3:nth-of-type(3){
 	text-align: right;
-}
+ */}
 
 hr{ 
 	border : 0;
@@ -58,7 +59,7 @@ h4{
 }
 
 .navbar-default .navbar-brand{
-	color: #757585;
+	color: #757590;
 	margin: 5px 10px;
 	font-weight: 800;
 	font-size: 25px;
@@ -67,7 +68,7 @@ h4{
 .nav.navbar-nav li a{
 	color: #555555;
 	font-weight: 600;
-	margin: 5px 10px;
+	margin: 5px 15px;
 	font-size: 16px;
 }
 
@@ -85,22 +86,22 @@ h4{
 }
 
 .dev-html{
-	width: 120px;
-	height: 120px;
+	width: 100px;
+	height: 100px;
 	background: #333333;
 	border-radius: 50%;
 	color: green;
 	text-align: center;
-	line-height: 120px;
-	font-size: 18px;
+	line-height: 100px;
+	font-size: 17px;
 	font-weight: 600;
 	/* For cool borders around circle:
 	But my head started feeling,
 	 dizzy just by looking at it*/
-	 /*box-shadow:
+	box-shadow:
 	    0 0 0 10px rgb(204,204,204),
 	    0 0 0 15px rgb(230,230,230); 
-    margin: 30px;*/
+    margin: 15px;
 }
 
 .img-responsive{
@@ -108,8 +109,7 @@ h4{
 }
 
 .col-centered{
-	float: none;
-	margin: 30px auto;
+	margin-bottom: 30px;
 }
 
 .footer{
@@ -164,8 +164,8 @@ h4{
 
 
 #profile-picture img{
-	width: 200px;
-	height: 200px;
+	width: 190px;
+	height: 190px;
 	border-radius: 50%;
 	margin-bottom: 30px;
 }
@@ -177,4 +177,79 @@ h4{
 
 #contact{
 	padding-bottom: 2%;
+}
+
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/* Victoria Buttons */
+
+a.animated-button.victoria-one {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-one:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }

@@ -11,9 +11,9 @@
 	<script src="assets/js/lib/jquery-3.2.1.min.js"></script>
 	<script src="assets/js/lib/bootstrap.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="navbar-site">
 	
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top" id="#navbar-site">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-site" aria-expanded="false">
@@ -25,13 +25,13 @@
 				<a class="navbar-brand" href="#">Archita Desai</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse-site">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav nav-tabs" role="tablist">
 					<li><a href="#about-me">About Me</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#projects">Projects</a></li>
-					<li><a href="#resume">Resume</a></li>
+					<!-- <li><a href="#resume">Resume</a></li> -->
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right nav-tabs" role="tablist">
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -57,10 +57,12 @@
 				</h2>
 				<hr>
 				<div class="col-lg-12">
-					<div id="profile-picture"><img src="assets/images/archita-new.jpg" alt="Profile picture"></div>
+					<div id="profile-picture"><img src="https://media.licdn.com/dms/image/C5103AQFbkTyZbMMvgA/profile-displayphoto-shrink_200_200/0?e=1528225200&v=alpha&t=kXqyA7e3uGnNp2jtoq94Hqqv6FMYT-N9Fyl7U57q9gc" alt="Profile picture"></div>
 				</div>
 				<div class="col-lg-12">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deserunt cum hic voluptates suscipit libero ut, beatae quisquam culpa enim reiciendis, neque molestias nam maiores facere mollitia architecto autem dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eligendi similique recusandae iste, ipsum facere, non delectus rem. Eaque at perferendis enim dicta velit libero, sapiente vel ab atque eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa minima voluptatem aliquam iusto nobis cumque dolor harum commodi impedit. Alias harum provident voluptatum consequuntur. Nesciunt doloremque placeat necessitatibus rem.</p>
+					<p>Hey, I'm Archita Desai. I'm a Full Stack Web Developer. 
+					<br> From the time I encountered coding, I couldn't keep my eyes off of it. When I'm not writing code, I'm watching other people write it. I've tried to keep myself up to date with the latest technologies and so I can easily figure out tools that will be the best ones for your ideas. I play Volleyball which keeps me physically healthy, which in turn helps my mind stay healthy and productive. I meditate and read Self Development books to become a better version of myself. As of now, I'm reading <a href="https://www.amazon.in/Zero-One-Notes-Startups-Future/dp/0804139296">"Zero to One"</a>, which is a guide to startups. Shoot me an email if you've got some great book suggestions.
+					<br>Want to work together? I'd love to hear from you.</p>
 				</div>
 			</div>
 		</div>
@@ -79,13 +81,13 @@
 						<p>CSS3</p>
 					</div>
 					<div class="dev-html col-md-6 col-xs-4">
-						<p>JavaScript</p>
-					</div>
-					<div class="dev-html col-md-6 col-xs-4">
-						<p>jQuery</p>
-					</div>
-					<div class="dev-html col-md-6 col-xs-4">
 						<p>Bootstrap</p>
+					</div>
+					<div class="dev-html col-md-6 col-xs-4">
+						<p>Angular</p>
+					</div>
+					<div class="dev-html col-md-6 col-xs-4">
+						<p>Django</p>
 					</div>
 				</div>	
 		
@@ -100,6 +102,12 @@
 					</div>
 					<div class="dev-html col-md-4 col-xs-6">
 						<p>C</p>
+					</div>
+					<div class="dev-html col-md-6 col-xs-4">
+						<p>JavaScript</p>
+					</div>
+					<div class="dev-html col-md-6 col-xs-4">
+						<p>TypeScript</p>
 					</div>
 				</div>
 
@@ -131,24 +139,17 @@
 				<hr>
 
 				<div class="row">
-					<div class="col-lg-6 col-xs-12 col-centered">
+					<div class="col-md-6 col-xs-12 col-centered">
 						<h4>RGB Guessing Game</h4>
 						<a href="https://architadesai.github.io/rgbGame"><img src="assets/images/rgb1.png" alt="RGB color guessing game image" class="img-responsive"></a>
 					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-6 col-xs-12 col-centered">
+				
+					<div class="col-md-6 col-xs-12 col-centered">
 						<h4>Patatap Clone</h4>	
 					
 						<a href="https://architadesai.github.io/patatap-clone"><img src="patatap.png" alt="patatap clone website image" class="img-responsive"></a>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div id="resume">
-			<div class="container">	
-				<button>Huge download button with written 'click here to download my resume' in PDF format with effects</button>
 			</div>
 		</div>
 	</div>
@@ -161,8 +162,15 @@
 				<a href="https://twitter.com/architad8"><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
 				<a href="https://www.quora.com/profile/Archita-Desai-1"><i class="fa fa-quora fa-2x social" aria-hidden="true"></i></a>
 			</div>
+			
 			<p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2018, Archita Desai. All rights reserved.</p>
 		</div>
-	</div>	
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$('body').scrollspy({target: ".navbar", offset: 50});
+    	});
+	</script>
 </body>
 </html>
